@@ -44,6 +44,22 @@
     setSupport(opening, { focusPanel: opening });
   });
   supportClose?.addEventListener('click', () => setSupport(false, { restoreFocus: true }));
+  document.querySelectorAll('[data-support-channel="wechat"]').forEach((link) => {
+    link.addEventListener('click', async (event) => {
+      event.preventDefault();
+      const value = link.dataset.supportValue || 'PisciumAlvin';
+      const feedback = supportPanel?.querySelector('.support-copy-feedback');
+      setSupport(true);
+      if (feedback) feedback.textContent = '微信号：' + value + '。正在尝试复制…';
+      try {
+        if (!navigator.clipboard?.writeText) throw new Error('clipboard unavailable');
+        await navigator.clipboard.writeText(value);
+        if (feedback) feedback.textContent = '已复制微信号：' + value;
+      } catch {
+        if (feedback) feedback.textContent = '微信号：' + value + '。浏览器未允许自动复制，请长按选取。';
+      }
+    });
+  });
   addEventListener('pointerdown', (event) => {
     if (supportWidget && !supportWidget.contains(event.target)) setSupport(false);
   });
@@ -103,6 +119,25 @@
   document.querySelectorAll('form[data-static-preview="true"]').forEach((form) => {
     form.querySelector('[data-static-preview-lock]')?.removeAttribute('disabled');
     form.querySelector('button[type="submit"]')?.removeAttribute('disabled');
+    const params = new URLSearchParams(location.search);
+    const artworkAliases = {
+      ready: '已有完整图稿',
+      idea: '只有草图或想法',
+      series: '需要系列化开发建议'
+    };
+    const requestedArtwork = artworkAliases[params.get('artwork')] || params.get('artwork');
+    if (requestedArtwork) {
+      form.querySelectorAll('[data-static-field="artworkStatus"]').forEach((radio) => {
+        radio.checked = radio.value === requestedArtwork;
+        radio.closest('label')?.classList.toggle('is-selected', radio.checked);
+      });
+    }
+    const requestedProduct = params.get('product');
+    const productSelect = form.querySelector('[data-static-field="productType"]');
+    if (requestedProduct && productSelect) {
+      const optionExists = [...productSelect.options].some((option) => option.value === requestedProduct);
+      if (optionExists) productSelect.value = requestedProduct;
+    }
     form.addEventListener('submit', (event) => {
       event.preventDefault();
       let result = form.querySelector('.static-form-result');

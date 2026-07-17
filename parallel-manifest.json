@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-17T13:30:19.333Z",
+  "generatedAt": "2026-07-17T14:14:12.623Z",
   "basePath": "/prism-works-acrylic-site-preview",
   "entry": "compare/index.html",
   "notFound": "404.html",
@@ -64,9 +64,9 @@
       "basePath": "/prism-works-acrylic-site-preview/dark",
       "entry": "dark/index.html",
       "previewImage": "dark/media/concept/prism-hero-v2.webp",
-      "sourceCommit": "78818a5a38886bc5b5ba6af4091e92bd9afd3c6a",
+      "sourceCommit": "080b06dc7ba7b6cabb2b6f42903a01164232a131",
       "sourceDirty": false,
-      "exporterCommit": "e52b6b4e1f8c19e00243a123e4be779c6c7cb4e9",
+      "exporterCommit": "9be2306f96e1f3026ca5e8c778941399b8ffab39",
       "exporterDirty": false,
       "assetRoots": [
         "dark/assets",
@@ -126,9 +126,9 @@
       "basePath": "/prism-works-acrylic-site-preview/clean",
       "entry": "clean/index.html",
       "previewImage": "clean/media/editorial/fridge-magnets-editorial.webp",
-      "sourceCommit": "e52b6b4e1f8c19e00243a123e4be779c6c7cb4e9",
+      "sourceCommit": "9be2306f96e1f3026ca5e8c778941399b8ffab39",
       "sourceDirty": false,
-      "exporterCommit": "e52b6b4e1f8c19e00243a123e4be779c6c7cb4e9",
+      "exporterCommit": "9be2306f96e1f3026ca5e8c778941399b8ffab39",
       "exporterDirty": false,
       "assetRoots": [
         "clean/assets",
