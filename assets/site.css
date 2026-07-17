@@ -2329,6 +2329,157 @@ img {
   line-height: 1.9;
 }
 
+.social-gateway {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 100px;
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 12% 8%, rgba(114, 246, 255, 0.1), transparent 34%),
+    radial-gradient(circle at 88% 90%, rgba(155, 123, 255, 0.11), transparent 35%),
+    #080b13;
+}
+
+.social-gateway > header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.6fr);
+  gap: 20px 7vw;
+  align-items: end;
+  margin-bottom: 44px;
+}
+
+.social-gateway > header .section-kicker {
+  grid-column: 1 / -1;
+}
+
+.social-gateway > header h2 {
+  max-width: 820px;
+  margin: 0;
+  font-size: clamp(40px, 5vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -0.055em;
+}
+
+.social-gateway > header p {
+  margin: 0 0 5px;
+  color: var(--paper-dim);
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.social-platform-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.social-platform-grid > a,
+.social-platform-grid > div {
+  position: relative;
+  display: grid;
+  min-height: 250px;
+  grid-template-rows: auto 1fr auto;
+  gap: 22px;
+  padding: 24px;
+  overflow: hidden;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--paper);
+  background: rgba(255, 255, 255, 0.018);
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.social-platform-grid > a:hover {
+  z-index: 1;
+  color: #071017;
+  background: var(--cyan);
+  transform: translateY(-5px);
+}
+
+.social-platform-grid > .is-pending {
+  color: rgba(255, 255, 255, 0.54);
+}
+
+.social-number {
+  color: var(--cyan);
+  font-family: var(--font-display);
+  font-size: 9px;
+  letter-spacing: 0.13em;
+}
+
+.social-platform-grid > a:hover .social-number,
+.social-platform-grid > a:hover small,
+.social-platform-grid > a:hover p,
+.social-platform-grid > a:hover .social-status {
+  color: rgba(7, 16, 23, 0.72);
+}
+
+.social-platform-grid > a > div,
+.social-platform-grid > div > div {
+  align-self: end;
+}
+
+.social-platform-grid small,
+.social-platform-grid strong,
+.social-platform-grid p {
+  display: block;
+}
+
+.social-platform-grid small {
+  margin-bottom: 7px;
+  color: rgba(255, 255, 255, 0.32);
+  font-family: var(--font-display);
+  font-size: 8px;
+  letter-spacing: 0.14em;
+}
+
+.social-platform-grid strong {
+  font-size: clamp(23px, 2vw, 34px);
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.social-platform-grid p {
+  margin: 13px 0 0;
+  color: var(--paper-dim);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.social-status {
+  align-self: end;
+  color: var(--lime);
+  font-size: 9px;
+}
+
+.social-platform-grid > a > b,
+.social-platform-grid > div > b {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  color: var(--lime);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.social-gateway > footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 22px;
+  color: rgba(255, 255, 255, 0.36);
+  font-size: 10px;
+}
+
+.social-gateway > footer a {
+  color: var(--cyan);
+}
+
 .site-footer {
   position: relative;
   padding: 130px clamp(24px, 6vw, 96px) 30px;
@@ -2415,6 +2566,271 @@ img {
   padding-top: 25px;
   color: rgba(255, 255, 255, 0.26);
   font-size: 9px;
+}
+
+.support-widget {
+  position: fixed;
+  z-index: 220;
+  right: clamp(16px, 2.2vw, 32px);
+  bottom: clamp(16px, 2.2vw, 30px);
+  display: grid;
+  justify-items: end;
+  font-family: var(--font-cn);
+}
+
+.support-toggle {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 12px;
+  min-width: 190px;
+  align-items: center;
+  padding: 13px 15px;
+  border: 1px solid rgba(114, 246, 255, 0.34);
+  border-radius: 2px;
+  color: var(--paper);
+  background:
+    linear-gradient(110deg, rgba(114, 246, 255, 0.13), rgba(155, 123, 255, 0.09)),
+    rgba(8, 12, 21, 0.9);
+  box-shadow: 0 16px 46px rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(20px) saturate(140%);
+  cursor: pointer;
+  text-align: left;
+}
+
+.support-toggle > span:nth-child(2) {
+  display: grid;
+  gap: 1px;
+}
+
+.support-toggle small {
+  color: var(--cyan);
+  font-family: var(--font-display);
+  font-size: 7px;
+  letter-spacing: 0.13em;
+}
+
+.support-toggle strong {
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+
+.support-toggle > b {
+  color: var(--lime);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.support-pulse {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--lime);
+  box-shadow: 0 0 20px rgba(201, 255, 88, 0.75);
+}
+
+.support-pulse::after {
+  position: absolute;
+  inset: -5px;
+  border: 1px solid rgba(201, 255, 88, 0.55);
+  border-radius: 50%;
+  content: "";
+  animation: support-ring 2s ease-out infinite;
+}
+
+.support-widget[data-support-status="offline"] .support-pulse {
+  background: var(--paper-dim);
+  box-shadow: none;
+}
+
+.support-widget[data-support-status="offline"] .support-pulse::after {
+  display: none;
+}
+
+.support-panel {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 12px);
+  width: min(390px, calc(100vw - 32px));
+  max-height: min(720px, calc(100vh - 120px));
+  padding: 24px;
+  overflow: auto;
+  border: 1px solid rgba(114, 246, 255, 0.23);
+  color: var(--paper);
+  background:
+    radial-gradient(circle at 90% 4%, rgba(155, 123, 255, 0.19), transparent 36%),
+    rgba(7, 10, 18, 0.97);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.58);
+  opacity: 0;
+  transform: translateY(18px) scale(0.97);
+  transform-origin: right bottom;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.25s ease,
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    visibility 0s linear 0.35s;
+}
+
+.support-widget.is-open .support-panel {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  visibility: visible;
+  pointer-events: auto;
+  transition-delay: 0s;
+}
+
+.support-panel > header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.support-panel > header > div {
+  display: grid;
+  gap: 7px;
+}
+
+.support-panel h2 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.support-panel > header button {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid var(--line);
+  color: var(--paper-dim);
+  background: transparent;
+  cursor: pointer;
+}
+
+.support-status {
+  color: var(--lime);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+}
+
+.support-intro {
+  margin: 20px 0;
+  color: var(--paper-dim);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.support-wechat-card {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 16px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid rgba(201, 255, 88, 0.18);
+  background: rgba(201, 255, 88, 0.04);
+}
+
+.support-wechat-card img {
+  width: 112px;
+  height: 112px;
+  padding: 4px;
+  object-fit: contain;
+  background: white;
+}
+
+.support-wechat-card > div {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.support-wechat-card small {
+  color: var(--lime);
+  font-family: var(--font-display);
+  font-size: 8px;
+  letter-spacing: 0.14em;
+}
+
+.support-wechat-card strong {
+  overflow-wrap: anywhere;
+  font-size: 15px;
+}
+
+.support-wechat-card span {
+  color: var(--paper-dim);
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.support-channel-list {
+  display: grid;
+  margin-top: 13px;
+  border-top: 1px solid var(--line);
+}
+
+.support-channel-list > a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 15px;
+  align-items: center;
+  padding: 13px 2px;
+  border-bottom: 1px solid var(--line);
+}
+
+.support-channel-list > a > span {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.support-channel-list small {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+}
+
+.support-channel-list strong {
+  overflow-wrap: anywhere;
+  font-size: 12px;
+}
+
+.support-channel-list b {
+  color: var(--cyan);
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.support-panel > footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 17px;
+}
+
+.support-panel > footer span {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 8px;
+}
+
+.support-panel > footer a {
+  color: var(--lime);
+  font-size: 10px;
+}
+
+@keyframes support-ring {
+  from {
+    opacity: 0.8;
+    transform: scale(0.55);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.35);
+  }
 }
 
 .reveal {
@@ -3496,9 +3912,13 @@ img {
 
 .factory-proof-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.75fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
   align-items: stretch;
+}
+
+.factory-proof-card.is-wide {
+  grid-column: 1 / -1;
 }
 
 .factory-proof-card {
@@ -3513,13 +3933,13 @@ img {
 
 .factory-proof-image {
   position: relative;
-  aspect-ratio: 1.45 / 1;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   background: #151821;
 }
 
-.factory-proof-image.is-portrait {
-  aspect-ratio: 0.75 / 1;
+.factory-proof-card.is-wide .factory-proof-image {
+  aspect-ratio: 16 / 8;
 }
 
 .factory-proof-image::after {
@@ -3538,10 +3958,6 @@ img {
   height: 100%;
   object-fit: cover;
   transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.factory-proof-image.is-portrait img {
-  object-position: center 42%;
 }
 
 .factory-proof-card:hover img {
@@ -5038,6 +5454,54 @@ img {
   .factory-snapshot,
   .contact-channel-grid {
     grid-template-columns: 1fr;
+  }
+
+  .social-gateway > header,
+  .social-platform-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-gateway > header .section-kicker {
+    grid-column: auto;
+  }
+
+  .social-platform-grid > a,
+  .social-platform-grid > div {
+    min-height: 215px;
+  }
+
+  .social-gateway > footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .support-widget {
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .support-toggle {
+    min-width: 168px;
+    padding: 12px 13px;
+  }
+
+  .support-panel {
+    position: fixed;
+    right: 12px;
+    bottom: 76px;
+    left: 12px;
+    width: auto;
+    max-height: calc(100dvh - 100px);
+    padding: 20px;
+  }
+
+  .support-wechat-card {
+    grid-template-columns: 96px 1fr;
+  }
+
+  .support-wechat-card img {
+    width: 96px;
+    height: 96px;
   }
 
   .channel-qr {

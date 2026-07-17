@@ -14,7 +14,29 @@
     setMenu(toggle.getAttribute('aria-expanded') !== 'true');
   });
   nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setMenu(false)));
-  addEventListener('keydown', (event) => { if (event.key === 'Escape') setMenu(false); });
+  const supportWidget = document.querySelector('[data-support-widget]');
+  const supportToggle = supportWidget?.querySelector('[data-support-toggle]');
+  const supportClose = supportWidget?.querySelector('[data-support-close]');
+  const supportPanel = supportWidget?.querySelector('[data-support-panel]');
+  const setSupport = (open) => {
+    if (!supportWidget || !supportToggle) return;
+    supportWidget.classList.toggle('is-open', open);
+    supportToggle.setAttribute('aria-expanded', String(open));
+    supportToggle.setAttribute('aria-label', open ? '关闭客服面板' : '打开客服面板');
+    supportPanel?.setAttribute('aria-hidden', String(!open));
+  };
+  supportToggle?.addEventListener('click', () => {
+    setSupport(!supportWidget.classList.contains('is-open'));
+  });
+  supportClose?.addEventListener('click', () => setSupport(false));
+  addEventListener('pointerdown', (event) => {
+    if (supportWidget && !supportWidget.contains(event.target)) setSupport(false);
+  });
+  addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') return;
+    setMenu(false);
+    setSupport(false);
+  });
   addEventListener('resize', () => { if (innerWidth > 900) setMenu(false); });
   addEventListener('scroll', () => header?.classList.toggle('is-scrolled', scrollY > 32), { passive: true });
 
