@@ -30,6 +30,25 @@ body { padding-top: 34px; }
   font-size: 12px;
   line-height: 1.7;
 }
+.static-form-result:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+.inquiry-form > fieldset[data-static-preview-lock] {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.static-form-noscript {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border: 1px solid rgba(255,93,187,.35);
+  color: #ffc3e5;
+  background: rgba(255,93,187,.07);
+  font-size: 12px;
+  line-height: 1.7;
+}
 @media (max-width: 680px) {
   body { padding-top: 48px; }
   .site-header { top: 48px; }
