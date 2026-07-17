@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-07-17T03:19:34.553Z",
+  "sourceOrigin": "http://localhost:3000",
+  "basePath": "/prism-works-acrylic-site-preview",
+  "routes": [
+    "/zh",
+    "/zh",
+    "/zh/products",
+    "/zh/products/acrylic-fridge-magnets",
+    "/zh/products/acrylic-keychains",
+    "/zh/products/acrylic-standees",
+    "/zh/products/crystal-pp-clips",
+    "/zh/custom",
+    "/zh/factory",
+    "/zh/contact",
+    "/zh/privacy"
+  ]
+}
