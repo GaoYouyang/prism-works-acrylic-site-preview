@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T11:59:34.992Z",
+  "basePath": "/prism-works-acrylic-site-preview",
+  "entry": "compare/index.html",
+  "notFound": "404.html",
+  "resourceLayout": "isolated-variant-directories",
+  "legacyRoutes": [
+    {
+      "source": "/zh/contact",
+      "output": "zh/contact/index.html",
+      "destination": "/prism-works-acrylic-site-preview/dark/zh/contact/index.html"
+    },
+    {
+      "source": "/zh/custom",
+      "output": "zh/custom/index.html",
+      "destination": "/prism-works-acrylic-site-preview/dark/zh/custom/index.html"
+    },
+    {
+      "source": "/zh/factory",
+      "output": "zh/factory/index.html",
+      "destination": "/prism-works-acrylic-site-preview/dark/zh/factory/index.html"
+    },
+    {
+      "source": "/zh",
+      "output": "zh/index.html",
+      "destination": "/prism-works-acrylic-site-preview/dark/zh/index.html"
+    },
+    {
+      "source": "/zh/privacy",
+      "output": "zh/privacy/index.html",
+      "destination": "/prism-works-acrylic-site-preview/dark/zh/privacy/index.html"
+    },
+    {
+      "source": "/zh/products/acrylic-fridge-magnets",
+      "output": "zh/products/acrylic-fridge-magnets/index.html",
+      "destination": "/prism-works-acrylic-site-preview/dark/zh/products/acrylic-fridge-magnets/index.html"
+    },
+    {
+      "source": "/zh/products/acrylic-keychains",
+      "output": "zh/products/acrylic-keychains/index.html",
+      "destination": "/prism-works-acrylic-site-preview/dark/zh/products/acrylic-keychains/index.html"
+    },
+    {
+      "source": "/zh/products/acrylic-standees",
+      "output": "zh/products/acrylic-standees/index.html",
+      "destination": "/prism-works-acrylic-site-preview/dark/zh/products/acrylic-standees/index.html"
+    },
+    {
+      "source": "/zh/products/crystal-pp-clips",
+      "output": "zh/products/crystal-pp-clips/index.html",
+      "destination": "/prism-works-acrylic-site-preview/dark/zh/products/crystal-pp-clips/index.html"
+    },
+    {
+      "source": "/zh/products",
+      "output": "zh/products/index.html",
+      "destination": "/prism-works-acrylic-site-preview/dark/zh/products/index.html"
+    }
+  ],
+  "variants": {
+    "dark": {
+      "directory": "dark",
+      "manifest": "dark/share-manifest.json",
+      "basePath": "/prism-works-acrylic-site-preview/dark",
+      "entry": "dark/index.html",
+      "previewImage": "dark/media/concept/prism-hero-v2.webp",
+      "sourceCommit": "78818a5a38886bc5b5ba6af4091e92bd9afd3c6a",
+      "sourceDirty": false,
+      "exporterCommit": "85f08c5e08f1c51c440b2f000aa70824d557a27b",
+      "exporterDirty": false,
+      "assetRoots": [
+        "dark/assets",
+        "dark/media",
+        "dark/icon.svg"
+      ],
+      "routes": [
+        {
+          "source": "/zh",
+          "output": "dark/index.html"
+        },
+        {
+          "source": "/zh",
+          "output": "dark/zh/index.html"
+        },
+        {
+          "source": "/zh/products",
+          "output": "dark/zh/products/index.html"
+        },
+        {
+          "source": "/zh/products/acrylic-fridge-magnets",
+          "output": "dark/zh/products/acrylic-fridge-magnets/index.html"
+        },
+        {
+          "source": "/zh/products/acrylic-keychains",
+          "output": "dark/zh/products/acrylic-keychains/index.html"
+        },
+        {
+          "source": "/zh/products/acrylic-standees",
+          "output": "dark/zh/products/acrylic-standees/index.html"
+        },
+        {
+          "source": "/zh/products/crystal-pp-clips",
+          "output": "dark/zh/products/crystal-pp-clips/index.html"
+        },
+        {
+          "source": "/zh/custom",
+          "output": "dark/zh/custom/index.html"
+        },
+        {
+          "source": "/zh/factory",
+          "output": "dark/zh/factory/index.html"
+        },
+        {
+          "source": "/zh/contact",
+          "output": "dark/zh/contact/index.html"
+        },
+        {
+          "source": "/zh/privacy",
+          "output": "dark/zh/privacy/index.html"
+        }
+      ]
+    },
+    "clean": {
+      "directory": "clean",
+      "manifest": "clean/share-manifest.json",
+      "basePath": "/prism-works-acrylic-site-preview/clean",
+      "entry": "clean/index.html",
+      "previewImage": "clean/media/editorial/fridge-magnets-editorial.webp",
+      "sourceCommit": "85f08c5e08f1c51c440b2f000aa70824d557a27b",
+      "sourceDirty": false,
+      "exporterCommit": "85f08c5e08f1c51c440b2f000aa70824d557a27b",
+      "exporterDirty": false,
+      "assetRoots": [
+        "clean/assets",
+        "clean/media",
+        "clean/icon.svg"
+      ],
+      "routes": [
+        {
+          "source": "/zh",
+          "output": "clean/index.html"
+        },
+        {
+          "source": "/zh",
+          "output": "clean/zh/index.html"
+        },
+        {
+          "source": "/zh/products",
+          "output": "clean/zh/products/index.html"
+        },
+        {
+          "source": "/zh/products/acrylic-fridge-magnets",
+          "output": "clean/zh/products/acrylic-fridge-magnets/index.html"
+        },
+        {
+          "source": "/zh/products/acrylic-keychains",
+          "output": "clean/zh/products/acrylic-keychains/index.html"
+        },
+        {
+          "source": "/zh/products/acrylic-standees",
+          "output": "clean/zh/products/acrylic-standees/index.html"
+        },
+        {
+          "source": "/zh/products/crystal-pp-clips",
+          "output": "clean/zh/products/crystal-pp-clips/index.html"
+        },
+        {
+          "source": "/zh/custom",
+          "output": "clean/zh/custom/index.html"
+        },
+        {
+          "source": "/zh/factory",
+          "output": "clean/zh/factory/index.html"
+        },
+        {
+          "source": "/zh/materials",
+          "output": "clean/zh/materials/index.html"
+        },
+        {
+          "source": "/zh/guides",
+          "output": "clean/zh/guides/index.html"
+        },
+        {
+          "source": "/zh/contact",
+          "output": "clean/zh/contact/index.html"
+        },
+        {
+          "source": "/zh/privacy",
+          "output": "clean/zh/privacy/index.html"
+        }
+      ]
+    }
+  }
+}

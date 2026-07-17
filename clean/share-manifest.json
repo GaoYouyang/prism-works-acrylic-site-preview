@@ -1,18 +1,72 @@
 {
-  "generatedAt": "2026-07-17T08:53:29.977Z",
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T11:59:15.063Z",
+  "variant": "clean",
+  "sourceCommit": "85f08c5e08f1c51c440b2f000aa70824d557a27b",
+  "sourceDirty": false,
+  "exporterCommit": "85f08c5e08f1c51c440b2f000aa70824d557a27b",
+  "exporterDirty": false,
   "sourceOrigin": "http://localhost:3000",
   "basePath": "/prism-works-acrylic-site-preview/clean",
+  "entry": "index.html",
+  "previewImage": "media/editorial/fridge-magnets-editorial.webp",
+  "assetRoots": [
+    "assets",
+    "media",
+    "icon.svg"
+  ],
   "routes": [
-    "/zh",
-    "/zh",
-    "/zh/products",
-    "/zh/products/acrylic-fridge-magnets",
-    "/zh/products/acrylic-keychains",
-    "/zh/products/acrylic-standees",
-    "/zh/products/crystal-pp-clips",
-    "/zh/custom",
-    "/zh/factory",
-    "/zh/contact",
-    "/zh/privacy"
+    {
+      "source": "/zh",
+      "output": "index.html"
+    },
+    {
+      "source": "/zh",
+      "output": "zh/index.html"
+    },
+    {
+      "source": "/zh/products",
+      "output": "zh/products/index.html"
+    },
+    {
+      "source": "/zh/products/acrylic-fridge-magnets",
+      "output": "zh/products/acrylic-fridge-magnets/index.html"
+    },
+    {
+      "source": "/zh/products/acrylic-keychains",
+      "output": "zh/products/acrylic-keychains/index.html"
+    },
+    {
+      "source": "/zh/products/acrylic-standees",
+      "output": "zh/products/acrylic-standees/index.html"
+    },
+    {
+      "source": "/zh/products/crystal-pp-clips",
+      "output": "zh/products/crystal-pp-clips/index.html"
+    },
+    {
+      "source": "/zh/custom",
+      "output": "zh/custom/index.html"
+    },
+    {
+      "source": "/zh/factory",
+      "output": "zh/factory/index.html"
+    },
+    {
+      "source": "/zh/materials",
+      "output": "zh/materials/index.html"
+    },
+    {
+      "source": "/zh/guides",
+      "output": "zh/guides/index.html"
+    },
+    {
+      "source": "/zh/contact",
+      "output": "zh/contact/index.html"
+    },
+    {
+      "source": "/zh/privacy",
+      "output": "zh/privacy/index.html"
+    }
   ]
 }

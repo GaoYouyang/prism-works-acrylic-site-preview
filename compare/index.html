@@ -7,75 +7,46 @@
     <title>PRISM WORKS｜双版本对比入口</title>
     <style>
       * { box-sizing: border-box; }
-      html { color-scheme: light; background: #eeece5; }
-      body {
-        margin: 0;
-        min-height: 100vh;
-        color: #1d211d;
-        background:
-          radial-gradient(circle at 85% 15%, rgba(108, 134, 123, .18), transparent 28%),
-          #eeece5;
-        font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-      }
-      main { width: min(1180px, calc(100% - 40px)); margin: 0 auto; padding: 76px 0 90px; }
-      header { max-width: 720px; margin-bottom: 44px; }
-      .eyebrow { color: #315f54; font-size: 11px; letter-spacing: .18em; }
-      h1 { margin: 18px 0 16px; font-family: Georgia, "Songti SC", serif; font-size: clamp(42px, 6vw, 78px); line-height: 1; letter-spacing: -.055em; }
-      header p { margin: 0; color: #686c65; font-size: 15px; line-height: 1.8; }
-      .versions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
-      article { overflow: hidden; border: 1px solid rgba(29, 33, 29, .14); background: #fff; box-shadow: 0 18px 50px rgba(48, 45, 39, .08); }
-      figure { position: relative; aspect-ratio: 16 / 10; margin: 0; overflow: hidden; background: #10131c; }
-      figure img { width: 100%; height: 100%; object-fit: cover; transition: transform .55s ease; }
-      article:hover figure img { transform: scale(1.025); }
-      .copy { padding: 30px; }
-      .copy small { color: #315f54; font-size: 9px; letter-spacing: .18em; }
-      .copy h2 { margin: 12px 0; font-family: Georgia, "Songti SC", serif; font-size: clamp(30px, 3.4vw, 45px); letter-spacing: -.04em; }
-      .copy p { min-height: 48px; margin: 0 0 24px; color: #686c65; font-size: 13px; line-height: 1.8; }
-      a { display: inline-flex; align-items: center; justify-content: space-between; min-width: 168px; padding: 13px 16px; color: #fff; background: #243d35; text-decoration: none; font-size: 12px; }
-      .dark { color: #eef2ff; border-color: rgba(121, 245, 255, .25); background: #0a0d16; }
-      .dark .copy small { color: #72f6ff; }
-      .dark .copy p { color: #aab0c2; }
-      .dark a { color: #09101a; background: linear-gradient(90deg, #72f6ff, #c9ff58); }
-      footer { margin-top: 28px; color: #777a73; font-size: 11px; line-height: 1.7; }
-      @media (max-width: 760px) {
-        main { width: min(100% - 24px, 620px); padding-top: 48px; }
-        .versions { grid-template-columns: 1fr; }
-        .copy p { min-height: 0; }
-      }
+      html { color-scheme: light; background: #efeee9; }
+      body { margin: 0; min-height: 100vh; color: #20231f; background: radial-gradient(circle at 85% 12%, #dfe7e1, transparent 32%), #efeee9; font-family: Arial, "PingFang SC", sans-serif; }
+      main { width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 64px 0 80px; }
+      header { max-width: 720px; margin-bottom: 36px; }
+      header span { color: #315f54; font-size: 11px; letter-spacing: .18em; }
+      h1 { margin: 14px 0; font: 600 clamp(40px, 7vw, 72px)/1 Georgia, "Songti SC", serif; letter-spacing: -.05em; }
+      header p, article p, footer { color: #686c65; line-height: 1.75; }
+      section { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+      article { overflow: hidden; border: 1px solid #d5d4ce; background: #fff; box-shadow: 0 20px 50px rgba(40, 42, 38, .08); }
+      figure { aspect-ratio: 16 / 9; margin: 0; overflow: hidden; background: #171a1f; }
+      img { width: 100%; height: 100%; object-fit: cover; }
+      .copy { padding: 26px; }
+      .copy small { color: #315f54; letter-spacing: .15em; }
+      h2 { margin: 10px 0; font: 600 34px/1.1 Georgia, "Songti SC", serif; }
+      a { display: inline-flex; margin-top: 8px; padding: 12px 15px; color: #fff; background: #243d35; text-decoration: none; }
+      .dark { color: #f4f7ff; border-color: #2d3445; background: #0c1019; }
+      .dark p { color: #aab0c2; }
+      .dark a { color: #09101a; background: #72f6ff; }
+      footer { margin-top: 24px; font-size: 12px; }
+      @media (max-width: 720px) { section { grid-template-columns: 1fr; } main { padding-top: 44px; } }
     </style>
   </head>
-  <body>
+  <body data-parallel-entry="compare">
     <main>
       <header>
-        <span class="eyebrow">PRISM WORKS / PARALLEL DIRECTIONS</span>
+        <span>PRISM WORKS / PARALLEL DIRECTIONS</span>
         <h1>两套独立视觉，平行比较。</h1>
-        <p>两个版本各自拥有完整页面、图片与设计语言；打开后不会互相覆盖，也不会混用背景。</p>
+        <p>两个版本分别保留自己的页面、图片与设计语言；选择任意方向进入完整预览。</p>
       </header>
-      <section class="versions" aria-label="网站版本选择">
+      <section aria-label="网站版本选择">
         <article class="dark">
-          <figure>
-            <img src="/prism-works-acrylic-site-preview/media/concept/prism-hero-v2.webp" alt="暗黑科幻版预览" />
-          </figure>
-          <div class="copy">
-            <small>VERSION 01 / PRISM DARK</small>
-            <h2>暗黑科幻版</h2>
-            <p>紫黑折光、空间感和动态装置语言，保留原有产品渲染与视觉冲击力。</p>
-            <a href="/prism-works-acrylic-site-preview/zh/">进入暗黑版 <span>↗</span></a>
-          </div>
+          <figure><img src="../dark/media/concept/prism-hero-v2.webp" alt="暗黑科幻版预览" /></figure>
+          <div class="copy"><small>VERSION 01 / PRISM DARK</small><h2>暗黑科幻版</h2><p>高对比折光、空间感与更强的产品视觉冲击。</p><a href="../dark/index.html">进入暗黑版 ↗</a></div>
         </article>
         <article>
-          <figure>
-            <img src="/prism-works-acrylic-site-preview/clean/media/editorial/fridge-magnets-editorial.jpg" alt="干净高级版预览" />
-          </figure>
-          <div class="copy">
-            <small>VERSION 02 / CLEAN EDITORIAL</small>
-            <h2>干净高级版</h2>
-            <p>米白纸感、低饱和材质与稳定编辑式网格，使用独立生成的四类产品视觉。</p>
-            <a href="/prism-works-acrylic-site-preview/clean/zh/">进入干净版 <span>↗</span></a>
-          </div>
+          <figure><img src="../clean/media/editorial/fridge-magnets-editorial.webp" alt="干净编辑版预览" /></figure>
+          <div class="copy"><small>VERSION 02 / CLEAN EDITORIAL</small><h2>干净编辑版</h2><p>米白纸感、克制配色与稳定的编辑式网格。</p><a href="../clean/index.html">进入干净版 ↗</a></div>
         </article>
       </section>
-      <footer>这是 GitHub 共享预览入口。表单在预览环境不会实际提交，正式上线后再连接服务器、数据库与通知接口。</footer>
+      <footer>这是只读共享预览；表单不会实际提交，两个版本的资源互不混用。</footer>
     </main>
   </body>
 </html>
